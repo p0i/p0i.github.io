@@ -121,6 +121,17 @@
                 transform: translate(0, 0);
             }
         }
+        @keyframes creep {
+            0%{
+                transform: scaleX(1);
+            }
+            50%{
+                transform: scaleX(0.9);
+            }
+            100%{
+                transform: scaleX(1);
+            }
+        }
         @keyframes jump {
             0%{
                 transform: rotate(10deg);
@@ -142,6 +153,9 @@
         .jump {
             animation: jump 1s infinite;
             transform-origin:50% 90%;
+        }
+        .creep{
+        	animation:creep 1s infinite;
         }
         #spoi-2.run {
             animation-delay: 8s;
@@ -177,8 +191,8 @@
         </div>
 
         <div id="spoi-2" class="run">
-            <div class="jump">
-                <img src="spoi.gif" alt="s-poi" >
+            <div class="creep">
+                <img src="mutsu.gif" alt="s-poi" >
             </div>
         </div>
 
